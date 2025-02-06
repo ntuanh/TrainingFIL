@@ -1,6 +1,7 @@
 ## 1. Servers and Client  
 * A Server is a computer or software that provides services, data, or resources to other devices (aka Client) over a network.  
 * A client is a device, software, or system that requests services, data, or resources from a server in a network. It can be a computer, smartphone, or any device that interacts with a server.
+
 ![Server and Client model](../Week_0/ServerAndClient.png)
 
 ## 2. Forwarding  
