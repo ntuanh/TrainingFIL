@@ -54,13 +54,14 @@
     * Consist 2 parts : a network address and a host address  
 
     * IPv4( Internet Protocol version 4 ) :
-        - 32-bit address ( 4 octets ) .
+        - 32-bit address ( 4 octets 4x8) .
         - 2^32 possible addresses ( 4,294,967,296 ) .
         - CIDR ( Classless Inter-Domain Routing ) .
     * IPv6 ( Internet Protocol version 6 ) :
-        - 128-bit address ( 8 octets ) .
+        - 128-bit address ( 8 octets : 8x16) .
         - 2^128 possible addresses ( 3.4 x 10^38 ) .
         - Better Security .
+        ![IPv6 Address ](../Week_0/Images/IPv6.png)
     
     * Public and Private IP ( Ex : Google DNS and Home router ).
 
@@ -71,3 +72,10 @@
 
 
 ### iv . HTTP 
+* **HTTP (Hypertext Transfer Protocol)**: is a request-response protocol used for transferring data
+    * Common methods : GET , POST , PUT , DELETE , HEAD ...
+    * Versions : 1 , 1.1 , 2 , 3 
+    * Application layer (Layer 7)
+    * HTTPS (Hypertext Transfer Protocol Secure)
+
+    * IP -> TCP -> HTTP .
