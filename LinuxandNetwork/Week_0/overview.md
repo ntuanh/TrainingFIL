@@ -2,7 +2,7 @@
 * A Server is a computer or software that provides services, data, or resources to other devices (aka Client) over a network.  
 * A client is a device, software, or system that requests services, data, or resources from a server in a network. It can be a computer, smartphone, or any device that interacts with a server.
 
-![Server and Client model ](../Week_0/Images/ServerClient.png)
+    ![Server and Client model ](../Week_0/Images/ServerClient.png)
 
 ## 2. Forwarding  
 * **Forwarding** is the process of sending a message from one node to another node in the network (Destination, Next Hop, Interface).  
@@ -15,7 +15,7 @@
 * **Interface**: is a connection point that allows a device (such as a router, switch, or computer) to communicate.  
     - Each interface has a unique IP address and is used to connect to a network or the internet.  
 
-![Process of forwarding ](../Week_0/Images/Forwarding.png)
+    ![Process of forwarding ](../Week_0/Images/Forwarding.png)
 
 * BGP - Border Gateway Port 
 - eBGP (External)
@@ -24,7 +24,7 @@
     - Determine the best path .
     - Enable the exchange of routing information between different autonomous systems (AS) in an inter-domain or inter-network .
 
-![BGP](../Week_0/Images/BGP.png)
+    ![BGP](../Week_0/Images/BGP.png)
 
 ## 3 . Protocols ( most basic )
 
@@ -50,5 +50,24 @@
     ![Process of UDP ](../Week_0/Images/UDP.png)
 
 ### iii . IP 
+* **IP (Internet Protocol)**:  fundamental protocol used for addressing and routing data packets across networks . 
+    * Consist 2 parts : a network address and a host address  
+
+    * IPv4( Internet Protocol version 4 ) :
+        - 32-bit address ( 4 octets ) .
+        - 2^32 possible addresses ( 4,294,967,296 ) .
+        - CIDR ( Classless Inter-Domain Routing ) .
+    * IPv6 ( Internet Protocol version 6 ) :
+        - 128-bit address ( 8 octets ) .
+        - 2^128 possible addresses ( 3.4 x 10^38 ) .
+        - Better Security .
+    
+    * Public and Private IP ( Ex : Google DNS and Home router ).
+
+    * Static and Dynamic IP ( Ex : Server and user ).
+
+    * How does work ? 
+        - Add IP address to the data packet -> send -> get data -> handle .
+
 
 ### iv . HTTP 
