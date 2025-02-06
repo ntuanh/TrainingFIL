@@ -17,4 +17,10 @@
 
 ![Process of forwarding ](../Week_0/Forwarding.png)
 
-## 3. 
+* BGP - Border Gateway Port 
+- eBGP (External)
+- iBGP (Internal) 
+- Purpose : 
+    - Determine the best path .
+    - Enable the exchange of routing information between different autonomous systems (AS) in an inter-domain or inter-network .
+![BGP](../Week_0/BGP.png)
