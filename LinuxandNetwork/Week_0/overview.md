@@ -23,4 +23,15 @@
 - Purpose : 
     - Determine the best path .
     - Enable the exchange of routing information between different autonomous systems (AS) in an inter-domain or inter-network .
+
 ![BGP](../Week_0/BGP.png)
+
+## 3 . Protocols ( most basic )
+
+### i . TCP 
+
+### ii . UDP 
+
+### iii . IP 
+
+### iv . HTTP 
