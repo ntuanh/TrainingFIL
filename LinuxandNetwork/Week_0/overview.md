@@ -1,6 +1,6 @@
-<a name="Modau"></a>
+
 ## 1. Servers and Client 
-    * A Server is a computer or software that provides services  , data , or resources to the other devices ( aka Client  ) over network. 
+    A Server is a computer or software that provides services  , data , or resources to the other devices ( aka Client  ) over network
 
 ## 2. Forwarding .
     *  Forwarding is the process of sending a message from one node to another node in the network ( Destination , Next Hop , Interface).
