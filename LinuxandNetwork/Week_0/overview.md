@@ -1,5 +1,6 @@
 ## 1. Servers and Client  
 A Server is a computer or software that provides services, data, or resources to other devices (aka Client) over a network.  
+A client is a device, software, or system that requests services, data, or resources from a server in a network. It can be a computer, smartphone, or any device that interacts with a server.
 
 ## 2. Forwarding  
 * **Forwarding** is the process of sending a message from one node to another node in the network (Destination, Next Hop, Interface).  
