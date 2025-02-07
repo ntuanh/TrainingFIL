@@ -2,7 +2,7 @@
 * A Server is a computer or software that provides services, data, or resources to other devices (aka Client) over a network.  
 * A client is a device, software, or system that requests services, data, or resources from a server in a network. It can be a computer, smartphone, or any device that interacts with a server.
 
-    ![Server and Client model ](../Week_0/Images/ServerClient.png)
+    ![Server and Client model ](../[w0]OverviewNetworkAndLinux/Images/ServerClient.png)
 
 ## 2. Forwarding  
 * **Forwarding** is the process of sending a message from one node to another node in the network (Destination, Next Hop, Interface).  
@@ -15,7 +15,7 @@
 * **Interface**: is a connection point that allows a device (such as a router, switch, or computer) to communicate.  
     - Each interface has a unique IP address and is used to connect to a network or the internet.  
 
-    ![Process of forwarding ](../Week_0/Images/Forwarding.png)
+    ![Process of forwarding ](../[w0]OverviewNetworkAndLinux/Images/Forwarding.png)
 
 * BGP - Border Gateway Port 
 - eBGP (External)
@@ -24,7 +24,7 @@
     - Determine the best path .
     - Enable the exchange of routing information between different autonomous systems (AS) in an inter-domain or inter-network .
 
-    ![BGP](../Week_0/Images/BGP.png)
+    ![BGP](../[w0]OverviewNetworkAndLinux/Images/BGP.png)
 
 ## 3 . Protocols ( most basic )
 
@@ -38,7 +38,7 @@
 
     * Slower <> Reliable .
 
-    ![Process of TCP ](../Week_0/Images/TCP.png)
+    ![Process of TCP ](../[w0]OverviewNetworkAndLinux/Images/TCP.png)
 
 ### ii . UDP 
 * **UDP (User Datagram Protocol)**: is a connectionless protocol that prioritizes speed over reliability
@@ -47,7 +47,7 @@
 
     * Faster <> Unreliable .
 
-    ![Process of UDP ](../Week_0/Images/UDP.png)
+    ![Process of UDP ](../[w0]OverviewNetworkAndLinux/Images/UDP.png)
 
 ### iii . IP 
 * **IP (Internet Protocol)**:  fundamental protocol used for addressing and routing data packets across networks . 
@@ -61,7 +61,7 @@
         - 128-bit address ( 8 octets : 8x16) .
         - 2^128 possible addresses ( 3.4 x 10^38 ) .
         - Better Security .
-        ![IPv6 Address ](../Week_0/Images/IPv6.png)
+        ![IPv6 Address ](../[w0]OverviewNetworkAndLinux/Images/IPv6.png)
     
     * Public and Private IP ( Ex : Google DNS and Home router ).
 
