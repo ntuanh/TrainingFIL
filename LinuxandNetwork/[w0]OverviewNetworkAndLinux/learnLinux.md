@@ -22,7 +22,7 @@
 * find /path -name "file"    - Find a file by name
 ```
 
-## File Operations
+### File Operations
 ```sh
 * touch file    - Create an empty file
 * cat file      - Display file contents
@@ -33,7 +33,7 @@
 * wc -l file    - Count lines in a file
 ```
 
-## User Management
+### User Management
 ```sh
 * whoami    - Show current user
 * id        - Display user ID and group ID
@@ -44,7 +44,7 @@
 * usermod -aG group user     - Add user to a group
 ```
 
-## Process Management
+### Process Management
 ```sh
 * ps aux    - List all running processes
 * top       - Display real-time process monitoring
@@ -53,7 +53,7 @@
 * htop      - Interactive process viewer (if installed)
 ```
 
-## Disk Usage and Monitoring
+### Disk Usage and Monitoring
 ```sh
 * df -h    - Show disk usage in human-readable format
 * du -sh dir    - Show directory size
@@ -61,7 +61,7 @@
 * uptime    - Show system uptime and load average
 ```
 
-## Networking
+### Networking
 ```sh
 * ip a    - Show IP addresses
 * ifconfig    - Display network interfaces (deprecated)
@@ -72,7 +72,7 @@
 * wget url    - Download a file from a URL
 ```
 
-## Package Management
+### Package Management
 ```sh
 * apt update    - Update package lists
 * apt upgrade    - Upgrade all packages
@@ -80,7 +80,7 @@
 * apt remove pkg    - Remove a package
 ```
 
-## System Control
+### System Control
 ```sh
 * shutdown -h now    - Shutdown the system immediately
 * reboot    - Reboot the system
@@ -90,7 +90,7 @@
 * systemctl status service    - Check service status
 ```
 
-## File Compression and Extraction
+### File Compression and Extraction
 ```sh
 * tar -czvf file.tar.gz dir/    - Compress a directory
 * tar -xzvf file.tar.gz    - Extract a compressed tar file
@@ -98,10 +98,68 @@
 * unzip file.zip    - Extract a zip file
 ```
 
-## Miscellaneous
+### Miscellaneous
 ```sh
 * echo "text"    - Print text to terminal
 * alias ll='ls -la'    - Create an alias
 * history    - Show command history
 * clear    - Clear terminal screen
 ```
+
+## Network configuration check commands .
+
+### netstat 
+`netstat` (**network statistics**) is a command-line tool that displays network connections, routing tables, interface statistics, masquerade connections, and more. It is commonly used for network troubleshooting and monitoring.
+
+#### 1. Show all active connections
+```bash
+netstat -a
+```
+Lists all active TCP and UDP connections.
+
+#### 2. Display listening ports
+```bash
+netstat -l
+```
+Shows all open ports.
+
+#### 3. Show processes using network connections (Linux)
+```bash
+netstat -tulpn
+```
+- `-t` → TCP connections  
+- `-u` → UDP connections  
+- `-l` → Listening connections  
+- `-p` → Show process ID (PID)  
+- `-n` → Display numerical addresses instead of resolving hostnames  
+
+#### 4. Check network statistics
+```bash
+netstat -s
+```
+Provides a summary of network statistics, including packets sent, received, and errors.
+
+#### 5. Monitor connections in real-time
+```bash
+watch netstat -an
+```
+Refreshes the `netstat -an` output every 2 seconds.
+
+#### 6. Find a specific port in use
+```bash
+netstat -an | grep ":80"
+```
+Checks if port 80 is in use.
+
+#### 7. View routing table
+```bash
+netstat -r
+```
+Displays the system's routing table.
+
+#### Alternative to `netstat`
+In newer Linux systems, `netstat` has been deprecated in favor of `ss`:
+```bash
+ss -tulpn
+```
+
