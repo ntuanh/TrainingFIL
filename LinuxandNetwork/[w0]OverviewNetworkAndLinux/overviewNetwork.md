@@ -15,7 +15,7 @@
 * **Interface**: is a connection point that allows a device (such as a router, switch, or computer) to communicate.  
     - Each interface has a unique IP address and is used to connect to a network or the internet.  
 
-    ![Process of forwarding ](../[w0]OverviewNetworkAndLinux/ImagesNetwork/Forwarding.png)
+        ![Process of forwarding ](../[w0]OverviewNetworkAndLinux/ImagesNetwork/Forwarding.png)
 
 * BGP - Border Gateway Port 
 - eBGP (External)
@@ -24,7 +24,7 @@
     - Determine the best path .
     - Enable the exchange of routing information between different autonomous systems (AS) in an inter-domain or inter-network .
 
-    ![BGP](../[w0]OverviewNetworkAndLinux/ImagesNetwork/BGP.png)
+        ![BGP](../[w0]OverviewNetworkAndLinux/ImagesNetwork/BGP.png)
 
 ## 3 . Protocols ( most basic )
 
@@ -61,7 +61,8 @@
         - 128-bit address ( 8 octets : 8x16) .
         - 2^128 possible addresses ( 3.4 x 10^38 ) .
         - Better Security .
-        ![IPv6 Address ](../[w0]OverviewNetworkAndLinux/ImagesNetwork/IPv6.png)
+
+    ![IPv6 Address ](../[w0]OverviewNetworkAndLinux/ImagesNetwork/IPv6.png)
     
     * Public and Private IP ( Ex : Google DNS and Home router ).
 
@@ -79,3 +80,4 @@
     * HTTPS (Hypertext Transfer Protocol Secure)
 
     * IP -> TCP -> HTTP .
+

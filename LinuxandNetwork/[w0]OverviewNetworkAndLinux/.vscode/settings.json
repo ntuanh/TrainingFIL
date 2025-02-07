@@ -1,8 +1,16 @@
 {
     "cSpell.words": [
+        "adduser",
         "bcdedit",
+        "chgrp",
         "connectionless",
+        "czvf",
         "Datagram",
-        "hypervisorlaunchtype"
+        "deluser",
+        "hypervisorlaunchtype",
+        "killall",
+        "tulnp",
+        "usermod",
+        "xzvf"
     ]
 }

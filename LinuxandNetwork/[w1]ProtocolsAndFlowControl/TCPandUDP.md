@@ -19,3 +19,5 @@
     * Video streaming
     * Voice over IP (VoIP)
 * Faster and less reliable .
+
+* ![TCP vs UDP](../[w1]ProtocolsAndFlowControl/Images/TCPvsUDP.png)
