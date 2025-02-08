@@ -12,3 +12,14 @@
 * Avoid overwhelming the network . 
 * The sender should not send data too quickly, as this can lead to network congestion and packet loss
 * How does work ?   
+    * SLow start cwnd ( congest window )
+    * 1 -> 2 -> 4 -> 8 (lost) -> 1 -> 2 -> 4 -> 5 -> 6. 
+
+
+## SSH ( Secure Shell ):
+* Secure remote access to a computer . 
+* How does work ? 
+    * Authentication : The client sends a login request , either using a password or SSH key .
+    * Secure Channel Establishment : All communicate is encrypted by AES , RSA algorithm .
+    * Remote command Execution : Once connected , tun commands on the server as if you were using directly .
+    
