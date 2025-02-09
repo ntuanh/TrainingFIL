@@ -22,4 +22,7 @@
     * Authentication : The client sends a login request , either using a password or SSH key .
     * Secure Channel Establishment : All communicate is encrypted by AES , RSA algorithm .
     * Remote command Execution : Once connected , tun commands on the server as if you were using directly .
-    
+
+## Connection SSH between 2 linux machines .
+* Setting -> network -> change NAT to Bridged Adapter .
+* Follow [video ](https://www.youtube.com/watch?v=rhFLfwZzlGA)
