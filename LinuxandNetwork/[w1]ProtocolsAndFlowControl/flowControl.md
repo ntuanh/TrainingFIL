@@ -26,3 +26,26 @@
 ## Connection SSH between 2 linux machines .
 * Setting -> network -> change NAT to Bridged Adapter .
 * Follow [video ](https://www.youtube.com/watch?v=rhFLfwZzlGA)
+
+* Final .
+    ![Connected](../[w1]ProtocolsAndFlowControl/Images/ConnectedStatus.png)
+
+
+## SCP (Secure Copy Protocol )
+* Secure method for transferring file between computers over a network .
+* Key features : 
+    * Uses SSH key for authentication and encryption , ensuring secure file transfers .
+    * Allows copying files and directories .
+    * Works via command interface .
+    * Supports password-based and key-based authentication .
+* Basic SCP commands : 
+    ```sh 
+    * Copy file from local -> remote :
+        - scp file.txt user@remote_host:/path/to/destination/
+    * Copy file from remote -> local :
+        - scp user@remote_host:/path/to/file.txt /local/destination/
+    * Copy an entire directory :
+        - scp -r user@remote_host:/path/to/directory/ /local/destination/
+
+
+    ```
