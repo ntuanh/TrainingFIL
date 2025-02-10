@@ -8,3 +8,4 @@
 * [SSH connection between 2 linux machines (Simple) ](https://www.youtube.com/watch?v=3rROB-2r0bQ)
 
 * [How to SSH into VirtualBox machine ](https://www.youtube.com/watch?v=rhFLfwZzlGA)
+* [ SCP Tutorial ](https://www.youtube.com/watch?v=fmMg6cyww14)
