@@ -11,6 +11,7 @@
     * Loopback IP (127.0.0.1)
     * Virtual IP (VIP)
     * Reserved IP (Multicast, APIPA, etc.)
+    * Both static and dynamic IPs can be private or public, depending on the network configuration
  
 * IPv6
     * Link-Local (FE80::/10)
@@ -28,10 +29,26 @@
 
 
 ### Static IP 
+* Assigned to a device and does not change over time .
+* Commonly use for server , network devices (routers , printers ) and website that need a consistent address.
+* Paid 
+* Manually .
 
 ### Dynamic IP 
+* Assigned to a device and could change over time .
+* Commonly use for personal devices like laptops , smartphones , ...
+* Free
+* Automatically assigned by DHCP(Dynamic Host Configuration Protocol) server.
 
 ### Set static IP use manual method 
+* Open Network and Sharing Center
+* Click on Change adapter settings
+* Right click on Ethernet and select Properties
+* Select Internet Protocol Version 4 (TCP/IPv4)
+* Select Use the following IP address
 
 ### Set static IP use dynamic method 
+* Open Terminal Linux on virtual machine .
+
+
 
