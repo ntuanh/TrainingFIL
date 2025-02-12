@@ -14,14 +14,14 @@
         * DNSSEC : DNS Security Extensions .
         * TLD : Top-Level Domain.
 
-        ![DNS](../[w2]AuxiliaryProtocols/Images/DNS.png)
+        ![DNS](/Images/DNS.png)
 
 ### NAT - Network Address Translation 
 ##### SNAT - Static NAT 
 * One public IP address is mapped to one private IP address.
 * Example : `192.168.1.1` (private) &#8594; `100.0.0.1` (public)
     
-    ![SNAT](../[w2]AuxiliaryProtocols/Images/SNAT.png)
+    ![SNAT](/Images/SNAT.png)
 
 ##### DNAT - Dynamic NAT
 * Dynamic NAT assigns private IPs to the public IPs dynamically from a pool of the public IP address .
