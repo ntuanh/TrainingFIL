@@ -15,5 +15,8 @@
 ## IP 
 * [IP Address class](https://www.youtube.com/watch?v=0dFNpNgiTAA)
 * [ Private and Public IP](https://www.youtube.com/watch?v=po8ZFG0Xc4Q)
-*
 
+
+## Set IP tutorial 
+* [Set IP tutorial using Netplan 01-network-manager-all.yaml](https://www.youtube.com/watch?v=YZicKxPmCos&t=512s) 
+* [Set IP tutorial using 50-cloud-init.yaml](https://www.youtube.com/watch?v=fayx4jWqyWk)
