@@ -28,6 +28,7 @@
 * Example : `192.168.1.1` (private) &#8594; `100.0.0.1` (public ). If `192.168.1.1` disconnect &#8594; return IP address to the pool for reuse .
 
 ### DHCP 
+*
 
 ### HTTP 
 
