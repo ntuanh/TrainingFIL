@@ -17,19 +17,24 @@
         ![DNS](../[w2]AuxiliaryProtocols/Images/DNS.png)
 
 ### NAT - Network Address Translation 
-##### SNAT - Static NAT 
+#### SNAT - Static NAT 
 * One public IP address is mapped to one private IP address.
 * Example : `192.168.1.1` (private) &#8594; `100.0.0.1` (public)
     
     ![SNAT](../[w2]AuxiliaryProtocols/Images/SNAT.png)
 
-##### DNAT - Dynamic NAT
+#### DNAT - Dynamic NAT
 * Dynamic NAT assigns private IPs to the public IPs dynamically from a pool of the public IP address .
 * Example : `192.168.1.1` (private) &#8594; `100.0.0.1` (public ). If `192.168.1.1` disconnect &#8594; return IP address to the pool for reuse .
 
-### DHCP 
-*
+#### PAT - Port Address Translation .
+*  PAT (Port Address Translation) is a type of NAT (Network Address Translation) that allows multiple private IP addresses to share a single public IP address. It achieves this by assigning different port numbers to each connection. 
+* PAT is also known as NAT Overload and is the most commonly used NAT method in home and office networks.
 
-### HTTP 
+### DHCP - Dynamic Host Configuration Protocol
+* Automatically assign IP addresses to the devices on a network ( bonus subnet mask , gate way )
+    * [Explain DHCP](https://www.youtube.com/watch?v=e6-TaH5bkjo&t=432s)
+### HTTP - 
+
 
 ### FTP - File Transfer Protocol 
