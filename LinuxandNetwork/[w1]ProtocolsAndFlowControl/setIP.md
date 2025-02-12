@@ -47,8 +47,18 @@
 * Select Internet Protocol Version 4 (TCP/IPv4)
 * Select Use the following IP address
 
-### Set static IP use dynamic method 
-* Open Terminal Linux on virtual machine .
+### Set static IP use Terminal method 
+* Open Terminal Linux on Virtual Machine .
+* Type `sudo nano /etc/network/01-network-manager-all.yaml`.
+* Configuration follows the image .
 
+    * ![image](/[w1]ProtocolsAndFlowControl/Images/vm2Config.png)
+
+* Ctrl + X --> Y -> Enter
+* ` sudo netplan try `
+* check ip by command `ifconfig `
+* check network `ping -c 4 8.8.8.8`
+
+    * ![successful](/[w1]ProtocolsAndFlowControl/Images/vm2Status.png)
 
 
