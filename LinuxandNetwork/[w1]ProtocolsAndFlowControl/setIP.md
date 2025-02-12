@@ -52,13 +52,13 @@
 * Type `sudo nano /etc/network/01-network-manager-all.yaml`.
 * Configuration follows the image .
 
-    * ![image](/[w1]ProtocolsAndFlowControl/Images/vm2Config.png)
+    * ![image](../[w1]ProtocolsAndFlowControl/Images/vm2Config.png)
 
 * Ctrl + X --> Y -> Enter
 * ` sudo netplan try `
 * check ip by command `ifconfig `
 * check network `ping -c 4 8.8.8.8`
 
-    * ![successful](/[w1]ProtocolsAndFlowControl/Images/vm2Status.png)
+    * ![successful](../[w1]ProtocolsAndFlowControl/Images/vm2Status.png)
 
 
