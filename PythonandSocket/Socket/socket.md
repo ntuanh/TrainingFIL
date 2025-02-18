@@ -14,5 +14,31 @@
 * [5]   Data Transmission     - 2 machines exchange messages .
 * [6]   Closing the socket .
 
+### Socket families 
+* `AF_UNIX`     : is an address family , using domain sockets instead network sockets .
+* `AF_INET`     : is an address family , IPv4 
+* `AF_INET6`    :
+* `AF_CAN`      :
+
+* `SOCK_STREAM` : uses TCP protocol , reliable .
+
+### Commands :
+* `server_socket.bind(('IP' , PORT)) ` : assigns IP address and port .
+* `server_socket.listen(n)` : n is the max number of queued connections ( maximum n clients ).
+* `.server_socket.accept()`  : return a socket and a an IP address for each client .
+* `.recv(1024)`         : receive 1024 byte per time .
+* `.decode() `   : bytes to string .
+* `.encode() `   : string to bytes .
+
+* `socket.gethostname()` : get machine's name , return name string .
+* `socket.gethostbyname(hostname)` : get IP address of hostname , return IP .
+
+* `sudo netstat -tuln`   : Display all the ports running .
+* `sudo netstat -tulpn` : Display all the ports running , with PID .
+* `sudo kill -9 13958`   : `13958` is the PID ( Process ID ) not PORT .
+
+
+
 ## Resources :
 * [Socket tutorial JS ](https://socket.io/docs/v4/tutorial/introduction)
+* [Socket tutorial Python ](https://docs.python.org/3/library/socket.html)   
