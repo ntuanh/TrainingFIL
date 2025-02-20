@@ -72,9 +72,31 @@ class Circle(Shape):
     
 shapes = [Rectangle(4 , 5) , Circle(5)]
 
-for shape in shapes :
-    print(shape.area())  # 20.0 78.5
+# for shape in shapes :
+#     print(shape.area())  # 20.0 78.5
+
+animals = ['dog' , 'cat' , 'bird' ]
+weights = [10 , 5 , 7]
+
+""" *** sort *** """
+animals.sort() 
+print(animals)  # ['bird' , 'cat' , 'dog']
+
+animals.sort(reverse=True)
+print(animals)  # ['dog' , 'cat' , 'bird']
+
+""" *** enumerate *** """
+for index , animal in enumerate(animals):
+    print(f" index : {index}  is {animal}")
+#  index : 0  is dog
+#  index : 1  is cat
+#  index : 2  is bird
+
+""" *** multiple list with zip() *** """
+for weight , animal in zip(weights , animals):
+    print(f"{animal} is {weight} kilogram ")
+# dog is 10 kilogram 
+# cat is 5 kilogram 
+# bird is 7 kilogram 
 
 
-
-        
