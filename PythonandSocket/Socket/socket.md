@@ -21,6 +21,7 @@
 * `AF_CAN`      :
 
 * `SOCK_STREAM` : uses TCP protocol , reliable .
+* `SOCK_DGRAM`  : 
 
 ### Commands :
 * `server_socket.bind(('IP' , PORT)) ` : assigns IP address and port .
