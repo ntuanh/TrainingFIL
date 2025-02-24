@@ -1,57 +1,97 @@
 import socket
 import threading
-import sys
 
 SERVER_IP = socket.gethostbyname(socket.gethostname())
-
 SERVER_PORT = 8081
 
-# init socket
-client_socket = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
-client_socket.connect((SERVER_IP , SERVER_PORT))
+# Khởi tạo socket
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket.connect((SERVER_IP, SERVER_PORT))
 
-print("Init Successfully ! ")
+print("Init Successfully!")
 
 running = True
 
-def send_message():
-    print("Starting Send message function !")
-    global running
-    message = input("Enter your message or 'exit' in here : ")
-    client_socket.sendall(message.encode())
-
-    if message.lower() == "exit":
-        client_socket.close()
-        running = False
-        print("Closed Client socket")
-
-    response = client_socket.recv(1024).decode()
-    print(response)
-
-def check_stopping():
-    print("Starting Check Stopping function ! ")
-    global running
-    response = client_socket.recv(1024).decode()
-    if response == "exit":
-        running = False
-        client_socket.close()
-        print("Closed Client socket in check stopping function ")
-
-stop_thread = threading.Thread(target= check_stopping)
-stop_thread.start()
-
-while running:
-    print("In running while loop ")
+# check connection
+def is_client_connected(client):
     try:
-        main_thread = threading.Thread(target=send_message)
-        main_thread.start()
+        client.send(b'\x00')  # Gửi một byte rỗng
+        return True
     except:
-        break
-
-print("End Programing")
+        return False
 
 
+# def listen_server():
+#     global running
 
 
+def end_program():
+    global running
+    print("Closing Client socket...")
+    running = False
+    client_socket.close()
+
+def recv_message():
+    global running
+    while running:
+        try:
+            if client_socket.fileno() == -1:  # Check socket are running
+                break
+
+            response = client_socket.recv(1024).decode()
+
+            print(f"\nResponse from server: {response}")
+
+            if response == "exit":
+                print("Server closed !")
+                end_program()
+
+        except OSError:
+            print("Server closed!")
+            break
+
+
+def send_message():
+    global running
+    while running:
+        try:
+            # Ensure that server are running
+            message = input("Enter message or exit: ")
+
+            if message.lower() == "exit":
+                end_program()
+                break
+
+            # Check socket before send message
+            if client_socket.fileno() == -1:
+                print("Not connecting to server ! ")
+                break
+
+            client_socket.sendall(message.encode())
+
+
+        except OSError:
+            print("Server closed !")
+            break
+
+def main():
+    global running
+
+    # Init thread and start
+    send_thread = threading.Thread(target=send_message)
+    recv_thread = threading.Thread(target=recv_message)
+    send_thread.start()
+    recv_thread.start()
+
+    # End thread
+    send_thread.join()
+    recv_thread.join()
+
+
+
+    print("End Programming")
+
+if __name__ == "__main__":
+    main()
 
 
